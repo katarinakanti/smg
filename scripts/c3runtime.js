@@ -2736,7 +2736,17 @@ self.C3_ExpressionFuncs = [
 			const n1 = p._GetNode(1);
 			const v2 = p._GetNode(2).GetVar();
 			return () => n0.ExpObject(1, n1.ExpObject(v2.GetValue()));
-		}
+		},
+		() => "MainScreen",
+		() => "Pecinan",
+		() => 12,
+		() => 14,
+		() => "Kota Lama",
+		() => 10,
+		() => 9,
+		() => "Kauman",
+		() => 6,
+		() => "Kampung Melayu"
 ];
 
 
