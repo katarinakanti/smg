@@ -43,6 +43,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.lunarray_LiteTween.Acts.SetTarget,
 		C3.Plugins.Sprite.Acts.SetY,
 		C3.Plugins.Sprite.Exps.X,
+		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Sprite.Exps.Width,
@@ -61,7 +62,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.Count,
 		C3.Plugins.TextBox.Exps.Text,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.SetLayerInteractive,
 		C3.Plugins.Sprite.Exps.AnimationFrameCount,
 		C3.Plugins.Arr.Acts.SetX,
@@ -87,7 +87,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.DragnDrop.Cnds.OnDrop,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
-		C3.Plugins.Arr.Acts.Destroy
+		C3.Plugins.Arr.Acts.Destroy,
+		C3.Plugins.Sprite.Acts.SetVisible
 	];
 };
 self.C3_JsPropNameTable = [
@@ -111,6 +112,10 @@ self.C3_JsPropNameTable = [
 	{ArrayDrag: 0},
 	{ArrayTemp: 0},
 	{ArrayDrop: 0},
+	{ArrayTemp2: 0},
+	{ArrayPuzzleSets: 0},
+	{ArrayChosenShuffled: 0},
+	{ArrayChosenSet: 0},
 	{Touch: 0},
 	{Hitam: 0},
 	{Pin: 0},
@@ -153,6 +158,10 @@ self.C3_JsPropNameTable = [
 	{CardNamaKawasan: 0},
 	{BGKawasan: 0},
 	{CardMinigame: 0},
+	{Text: 0},
+	{Jigsaw_Drop: 0},
+	{Jigsaw_Drag: 0},
+	{PuzzleGame: 0},
 	{ScoreVal: 0},
 	{NameVal: 0},
 	{IndexA: 0},
@@ -190,7 +199,17 @@ self.C3_JsPropNameTable = [
 	{MatchedCards3: 0},
 	{FinalScore3: 0},
 	{PlayerName3: 0},
-	{tempCalc: 0}
+	{tempCalc: 0},
+	{Level: 0},
+	{Variasi: 0},
+	{Waktu: 0},
+	{Data_Waktu4: 0},
+	{TimeTaken4: 0},
+	{GameAktif4: 0},
+	{PuzzleSet: 0},
+	{PlayerName4: 0},
+	{FinalScore4: 0},
+	{MatchedPuzzle: 0}
 ];
 
 self.InstanceType = {
@@ -208,6 +227,10 @@ self.InstanceType = {
 	ArrayDrag: class extends self.IArrayInstance {},
 	ArrayTemp: class extends self.IArrayInstance {},
 	ArrayDrop: class extends self.IArrayInstance {},
+	ArrayTemp2: class extends self.IArrayInstance {},
+	ArrayPuzzleSets: class extends self.IArrayInstance {},
+	ArrayChosenShuffled: class extends self.IArrayInstance {},
+	ArrayChosenSet: class extends self.IArrayInstance {},
 	Touch: class extends self.IInstance {},
 	Hitam: class extends self.ISpriteInstance {},
 	ButtonPopup: class extends self.ISpriteInstance {},
@@ -241,5 +264,9 @@ self.InstanceType = {
 	MainPage: class extends self.ISpriteInstance {},
 	CardNamaKawasan: class extends self.ISpriteInstance {},
 	BGKawasan: class extends self.ISpriteInstance {},
-	CardMinigame: class extends self.ISpriteInstance {}
+	CardMinigame: class extends self.ISpriteInstance {},
+	Text: class extends self.ITextInstance {},
+	Jigsaw_Drop: class extends self.ISpriteInstance {},
+	Jigsaw_Drag: class extends self.ISpriteInstance {},
+	PuzzleGame: class extends self.ISpriteInstance {}
 }
