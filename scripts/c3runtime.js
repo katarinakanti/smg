@@ -2400,7 +2400,7 @@ self.C3_ExpressionFuncs = [
 		() => 1,
 		() => 0,
 		() => 4,
-		() => "Popup_win",
+		() => "Popup_lost",
 		() => "Content-Type",
 		() => "application/json",
 		() => "post_memorypecinan1",
@@ -2417,6 +2417,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "POST",
 		() => "get_memorypecinan1",
+		() => "Popup_win",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
@@ -2443,7 +2444,6 @@ self.C3_ExpressionFuncs = [
 			const v2 = p._GetNode(2).GetVar();
 			return () => and(((((n0.ExpObject() + "\n") + "Name: ") + v1.GetValue()) + ", Score: "), v2.GetValue());
 		},
-		() => "Popup_lost",
 		() => 3,
 		() => "post_memorypecinan2",
 		() => "https://semaranggame-af64a-default-rtdb.asia-southeast1.firebasedatabase.app/memorypecinan2.json",
