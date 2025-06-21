@@ -2785,7 +2785,6 @@ self.C3_ExpressionFuncs = [
 		() => "post_kelompok1kmelayu",
 		() => "https://semaranggame-af64a-default-rtdb.asia-southeast1.firebasedatabase.app/kelompok1kmelayu.json",
 		() => "get_kelompok1melayu",
-		() => "get_kelompok1kmelayu",
 		() => "post_kelompok1klama",
 		() => "https://semaranggame-af64a-default-rtdb.asia-southeast1.firebasedatabase.app/kelompok1klama.json",
 		() => "get_kelompok1klama",
